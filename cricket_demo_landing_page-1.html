@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Cricket Sports Demo — cricket information and a non-monetary demo experience.">
+  <title>Cricket Sports Hub — Demo</title>
+  <style>
+    :root { color-scheme: dark; --bg:#071b17; --panel:#102b25; --green:#25d366; --lime:#c8f169; --muted:#c2d3ce; }
+    * { box-sizing: border-box; }
+    body { margin:0; min-height:100vh; font-family:Arial,Helvetica,sans-serif; background:radial-gradient(circle at 80% 0%, #235344 0, transparent 35%),linear-gradient(160deg,#061713,#0b211c 60%,#071510); color:#fff; display:flex; flex-direction:column; }
+    header { padding:22px 18px; border-bottom:1px solid #ffffff1a; }
+    .brand { max-width:900px; margin:auto; font-weight:800; letter-spacing:.5px; }
+    .brand span { color:var(--lime); }
+    main { width:min(900px,100%); margin:auto; padding:46px 20px 36px; }
+    .tag { display:inline-block; padding:7px 12px; border:1px solid #c8f16966; border-radius:999px; color:var(--lime); font-size:12px; letter-spacing:1.2px; text-transform:uppercase; }
+    h1 { font-size:clamp(34px,8vw,62px); line-height:1.03; margin:20px 0 16px; letter-spacing:-1.5px; }
+    h1 span { color:var(--lime); }
+    .intro { max-width:650px; color:var(--muted); font-size:17px; line-height:1.7; }
+    .panel { margin-top:28px; background:linear-gradient(135deg,#14392f,#0c241e); border:1px solid #ffffff1a; border-radius:22px; padding:24px; box-shadow:0 18px 50px #0003; }
+    .panel h2 { margin:0 0 12px; font-size:21px; }
+    .features { display:grid; grid-template-columns:repeat(3,1fr); gap:12px; margin:22px 0; }
+    .feature { background:#ffffff09; border:1px solid #ffffff12; border-radius:14px; padding:16px 12px; color:var(--muted); font-size:14px; line-height:1.45; }
+    .feature strong { display:block; color:#fff; margin-bottom:6px; font-size:15px; }
+    .wa { display:flex; justify-content:center; align-items:center; gap:10px; width:100%; max-width:440px; margin:24px auto 0; padding:16px 20px; border-radius:14px; background:var(--green); color:#062b16; font-weight:800; font-size:17px; text-decoration:none; box-shadow:0 8px 24px #25d36630; }
+    .wa:focus-visible { outline:3px solid #fff; outline-offset:4px; }
+    .note { margin:16px auto 0; max-width:600px; text-align:center; color:#a8c1b8; font-size:12px; line-height:1.6; }
+    footer { padding:22px 18px; border-top:1px solid #ffffff1a; text-align:center; color:#9fb6ae; font-size:12px; line-height:1.7; }
+    @media (max-width:600px) { main { padding-top:34px; } .features { grid-template-columns:1fr; } .feature { padding:14px; } .panel { padding:18px; } }
+  </style>
+</head>
+<body>
+  <header><div class="brand">CRICKET <span>SPORTS HUB</span> <small style="color:#a8c1b8;font-weight:500">/ DEMO</small></div></header>
+  <main>
+    <div class="tag">Cricket • Sports • Demo</div>
+    <h1>Explore the game.<br><span>Enjoy the updates.</span></h1>
+    <p class="intro">Welcome to Cricket Sports Hub, a demonstration page for cricket information and sports-related updates. Have a question about this demo? Contact us on WhatsApp.</p>
+    <section class="panel" aria-labelledby="about-title">
+      <h2 id="about-title">What you can explore</h2>
+      <div class="features">
+        <div class="feature"><strong>Match updates</strong>Example cricket news and match information.</div>
+        <div class="feature"><strong>Sports content</strong>A simple place to explore the demo layout.</div>
+        <div class="feature"><strong>Quick contact</strong>Connect with us directly through WhatsApp.</div>
+      </div>
+      <a class="wa" href="https://wa.me/919310186828?text=Hi%2C%20I%27d%20like%20to%20know%20more%20about%20the%20Cricket%20Sports%20Hub%20demo." target="_blank" rel="noopener noreferrer" aria-label="Contact us on WhatsApp">
+        <svg width="23" height="23" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.52 3.48A11.86 11.86 0 0 0 12.08 0C5.5 0 .15 5.35.15 11.93c0 2.1.55 4.15 1.6 5.96L0 24l6.27-1.64a11.9 11.9 0 0 0 5.8 1.48h.01c6.58 0 11.93-5.35 11.93-11.93 0-3.19-1.24-6.19-3.49-8.43ZM12.08 21.8h-.01a9.86 9.86 0 0 1-5.02-1.37l-.36-.21-3.72.98.99-3.63-.24-.37a9.83 9.83 0 0 1-1.51-5.27c0-5.45 4.43-9.88 9.88-9.88a9.82 9.82 0 0 1 6.99 2.9 9.82 9.82 0 0 1 2.89 6.99c0 5.45-4.43 9.88-9.89 9.88Zm5.42-7.4c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.47-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.49s1.07 2.89 1.22 3.09c.15.2 2.1 3.21 5.09 4.5.71.31 1.27.5 1.7.64.71.23 1.36.2 1.87.12.57-.08 1.76-.72 2.01-1.42.25-.7.25-1.29.17-1.42-.07-.12-.27-.2-.57-.35Z"/></svg>
+        Chat with us on WhatsApp
+      </a>
+      <p class="note">This is a demo page for sports information. It does not offer real-money betting, deposits, withdrawals, or cash prizes.</p>
+    </section>
+  </main>
+  <footer>Cricket Sports Hub — Demo only<br>Replace this sample brand and content with accurate details about your actual service before publishing.</footer>
+</body>
+</html>
